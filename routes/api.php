@@ -2,20 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
-use App\Http\Controllers\API\NutritionController;
-use App\Http\Controllers\API\BabyNamesController;
-use App\Http\Controllers\API\PregnancyController;
-use App\Http\Controllers\API\ExerciseController;
-use App\Http\Controllers\ChildController;
-use App\Http\Controllers\PregnantRegistrationController;
-use App\Http\Controllers\UserRoleController;
-use App\Http\Controllers\GeneralTopicsController;
-use App\Http\Controllers\CommonDiseasesController;
-use App\Http\Controllers\GenderTypeController;
-use App\Http\Controllers\MumRegistrationController;
+use App\Http\Controllers\API\ChildController;
+use App\Http\Controllers\API\SleepController;
 use App\Http\Controllers\NutritionsController;
-use App\Http\Controllers\SleepController;
-use App\Http\Controllers\ExercisesController;
+use App\Http\Controllers\API\ExerciseController;
+use App\Http\Controllers\API\UserRoleController;
+use App\Http\Controllers\API\BabyNamesController;
+use App\Http\Controllers\API\ExercisesController;
+use App\Http\Controllers\API\NutritionController;
+use App\Http\Controllers\API\PregnancyController;
+use App\Http\Controllers\API\GenderTypeController;
+use App\Http\Controllers\API\GeneralTopicsController;
+use App\Http\Controllers\API\CommonDiseasesController;
+use App\Http\Controllers\API\MumRegistrationController;
+use App\Http\Controllers\API\PregnantRegistrationController;
 
 Route::post('register',[AuthController::class,'register']);
 Route::post('login',[AuthController::class,'login']);
@@ -86,16 +86,16 @@ Route::group(['middleware' => 'api', 'prefix' => 'api'], function () {
 // use App\Http\Controllers\API\BabyNamesController;
 // use App\Http\Controllers\API\PregnancyController;
 // use App\Http\Controllers\API\ExerciseController;
-// use App\Http\Controllers\ChildController;
-// use App\Http\Controllers\PregnantRegistrationController;
-// use App\Http\Controllers\UserRoleController;
-// use App\Http\Controllers\GeneralTopicsController;
-// use App\Http\Controllers\CommonDiseasesController;
-// use App\Http\Controllers\GenderTypeController;
-// use App\Http\Controllers\MumRegistrationController;
-// use App\Http\Controllers\NutritionsController;
-// use App\Http\Controllers\SleepController;
-// use App\Http\Controllers\ExercisesController;
+// use App\Http\Controllers\API\ChildController;
+// use App\Http\Controllers\API\PregnantRegistrationController;
+// use App\Http\Controllers\API\UserRoleController;
+// use App\Http\Controllers\API\GeneralTopicsController;
+// use App\Http\Controllers\API\CommonDiseasesController;
+// use App\Http\Controllers\API\GenderTypeController;
+// use App\Http\Controllers\API\MumRegistrationController;
+// use App\Http\Controllers\API\NutritionController;
+// use App\Http\Controllers\API\SleepController;
+// use App\Http\Controllers\API\ExercisesController;
 // /*
 // |--------------------------------------------------------------------------
 // | API Routes
@@ -154,7 +154,7 @@ Route::group(['middleware' => 'api', 'prefix' => 'api'], function () {
 //     Route::post('mum-registration', [MumRegistrationController::class, 'processRegistration']);
 // });
 // Route::group(['middleware' => 'api', 'prefix' => 'api'], function () {
-//     Route::get('nutrition', [NutritionsController::class, 'nutrition'])->name('nutritions.index');
+//     Route::get('nutrition', [NutritionController::class, 'nutrition'])->name('nutritions.index');
 // });
 // Route::group(['middleware' => 'api', 'prefix' => 'api'], function () {
 //     Route::get('pregnant-registration', [PregnantRegistrationController::class, 'showForm'])->name('pregnant-registration');
