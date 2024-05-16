@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 use App\Models\Registration;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class RegistrationController extends Controller
 {

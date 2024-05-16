@@ -74,7 +74,7 @@ Route::group(['middleware' => 'api', 'prefix' => 'api'], function () {
     Route::get('sleep', [SleepController::class, 'sleep'])->name('sleep.index');
 });
 
-Route::group(['middleware' => 'api', 'prefix' => 'api'], function () {
+Route::group(['middleware' => 'api', 'pref  ix' => 'api'], function () {
     Route::get('user-role', [UserRoleController::class, 'index'])->name('user-role.index');
     Route::post('user-role', [UserRoleController::class, 'update'])->name('user-role.update');
 });

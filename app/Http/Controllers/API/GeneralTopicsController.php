@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class GeneralTopicsController extends Controller
 {

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 //use App\Http\Controllers\Controller;
 use PhpParser\Node\Stmt\TryCatch;
+use App\Http\Controllers\Controller;
 
 class MumRegistrationController extends Controller
 {
